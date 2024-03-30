@@ -1,11 +1,12 @@
-body{
+body {
     width: 100%;
     height: 100%;
     color: black;
-    background:rgb(128, 177, 128) !important;
-    font-family: 'poppins',sans-serif;
+    background: rgb(128, 177, 128) !important;
+    font-family: 'poppins', sans-serif;
 }
-.Container::before{
+
+.Container::before {
     content: "";
     background: url(imagens/camaleão.png) no-repeat center center/cover;
     position: absolute;
@@ -14,18 +15,19 @@ body{
     opacity: 0.6;
     z-index: -1;
 }
+
 .Container .navbar {
-    display: flex; 
+    display: flex;
     height: 100px;
     width: 100%;
     align-items: center;
 }
 
-.Container .navbar .left img{
+.Container .navbar .left img {
     height: 100px;
 }
 
-.Container .navbar .right button{
+.Container .navbar .right button {
     margin: auto;
     font-size: 18px;
     font-weight: 400;
@@ -35,8 +37,14 @@ body{
     outline: none;
     border-radius: 4px;
     border: none;
+    transition: transform 0.3s;
 }
-.Container .title{
+
+.Container .navbar .right button:hover {
+    transform: scale(1.1);
+}
+
+.Container .title {
     padding: 70px 45px;
     max-width: 700px;
     margin: 0 auto;
@@ -44,8 +52,44 @@ body{
     text-align: center;
 }
 
-.Container .title .botao button{
+.Container .title .botao button {
     font-size: 24px;
     background: rgb(64, 99, 51);
     margin-top: 50px;
+    transition: transform 0.3s;
+}
+
+.Container .title .botao button:hover {
+    transform: scale(1.1);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0.6;
+    position: absolute;
+    top: 30px;
+    right: 200px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    transition: transform 0.3s;
+}
+
+li a:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
 }
