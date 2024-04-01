@@ -24,25 +24,9 @@ body {
 }
 
 .Container .navbar .left img {
-    height: 100px;
+    height: 90px;
 }
 
-.Container .navbar .right button {
-    margin: auto;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 7px 17px;
-    background: rgb(64, 99, 51);
-    cursor: pointer;
-    outline: none;
-    border-radius: 4px;
-    border: none;
-    transition: transform 0.3s;
-}
-
-.Container .navbar .right button:hover {
-    transform: scale(1.1);
-}
 
 .Container .title {
     padding: 70px 45px;
@@ -71,7 +55,7 @@ ul {
     opacity: 0.6;
     position: absolute;
     top: 30px;
-    right: 200px;
+    right: 40px;
 }
 
 li {
@@ -84,7 +68,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'poppins', sans-serif;
     transition: transform 0.3s;
 }
