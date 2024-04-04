@@ -87,11 +87,12 @@ li a:hover {
     padding: 0px 1.5rem;
     margin: 0 auto;
     gap: 2rem;
+    cursor: pointer; 
   
 }
 
 .card-header :hover{
-    transform: translateY(-7px);
+    transform: translateY(-5px);
     cursor: pointer; 
    
 }
