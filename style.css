@@ -8,7 +8,7 @@ body {
 
 .Container::before {
     content: "";
-    background: url(imagens/camaleão.png) no-repeat center center/cover;
+    background: url(imagens/camaleão.png) no-repeat center/cover;
     position: absolute;
     height: 100vh !important;
     width: 100%;
@@ -16,14 +16,29 @@ body {
     z-index: -1;
 }
 
-.Container .navbar {
+#desktop-nav {
+    display: none;
+}
+
+#mobile-nav nav #lg-bt {
     display: flex;
+    justify-content: space-around;
     height: 100px;
     width: 100%;
     align-items: center;
 }
 
-.Container .navbar .left img {
+#mobile-links {
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+}
+
+.close-mobile-links {
+    display: none;
+}
+
+.Container nav .left img {
     height: 70px;
 }
 
@@ -32,7 +47,7 @@ body {
     padding: 70px 45px;
     max-width: 700px;
     margin: 0 auto;
-    margin-top: 250px;
+    /* margin-top: 250px; */
     text-align: center;
     color: white;
 }
@@ -55,17 +70,6 @@ body {
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    opacity: 0.9;
-    position: absolute;
-    top: 30px;
-    right: 40px;
-}
-
-li {
-    float: left;
 }
 
 li a {
@@ -86,14 +90,13 @@ li a:hover {
 
 .Container-Card {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
     max-width: 1120px;
     width: 100%;
     padding: 0px 1.5rem;
     margin: 0 auto;
     gap: 2rem;
     cursor: pointer;
-
 }
 
 .Container-Card .card-body {
@@ -120,4 +123,20 @@ h4 {
     box-shadow: 0 0 10px 5px #198754;
     transition: 0.5s;
 
+}
+
+@media (min-width: 1024px) {
+    #mobile-nav {
+        display: none;
+    }
+    #desktop-nav {
+        display: block;
+    }
+
+    .Container .title {
+        margin-top: 10%;
+    }
+    .Container-Card {
+        grid-template-columns: 1fr 1fr 1fr 1fr
+    }
 }
