@@ -29,11 +29,11 @@ body {
 }
 
 #mobile-links {
-    background-color: black;
-    opacity: 0.6;
+    background-color: rgb(12, 11, 11);
+    opacity: 0.7;
     width: 100%;
-}
-
+    border-radius: 25px;
+ }
 .close-mobile-links {
     display: none;
 }
@@ -42,16 +42,13 @@ body {
     height: 70px;
 }
 
-
 .Container .title {
     padding: 70px 45px;
     max-width: 700px;
     margin: 0 auto;
-    /* margin-top: 250px; */
     text-align: center;
     color: white;
 }
-
 .Container .title .botao button {
     font-size: 24px;
     background: #198754;
