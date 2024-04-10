@@ -2,13 +2,13 @@ body {
     width: 100%;
     height: 100%;
     color: black;
-    background: rgb(0, 0, 0) !important;
+    background:rgba(39, 37, 37, 0.938)!important;
     font-family: 'poppins', sans-serif;
 }
 
 .Container::before {
     content: "";
-    background: url(imagens/camaleão.png) no-repeat center/cover;
+    background: url(imagens/camaleao.png) no-repeat center/cover;
     position: absolute;
     height: 100vh !important;
     width: 100%;
@@ -136,4 +136,17 @@ h4 {
     .Container-Card {
         grid-template-columns: 1fr 1fr 1fr 1fr
     }
+}
+
+.card-header img{
+    height: 25px;
+    margin-right: 10px;
+}
+
+h4 {
+    display: inline;
+}
+
+.center {
+    text-align: center;
 }
