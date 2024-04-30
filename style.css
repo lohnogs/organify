@@ -159,7 +159,6 @@ h4 {
 
 /* css do sobre nós */
 
-
 .conteudo-sn{
   text-align: center;
   display: flex;
@@ -183,4 +182,30 @@ h4 {
   max-width: 500px;
   margin:0 auto;
   text-align: justify;
+}
+
+.title-ct{
+  display: flex;
+  flex-direction:column;
+  height: 65vh;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+justify-content: center;
+
+}
+
+.title-ct h1, .title-ct h2,.title-ct h3{
+  display:flex;
+gap: 8px;
+align-items: center;
+justify-content: center;
+color: #dfdfdf;
+
+
+}
+
+.title-ct h1 i{
+  font-size: 30px;
+  margin-top: 8px;
 }
