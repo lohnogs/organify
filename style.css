@@ -11,7 +11,7 @@ body {
 
 .Container::before {
   content: "";
-  background: url(imagens/camaleao.png) no-repeat center/cover;
+  background: url(imagens/camaleao.png) no-repeat center/contein;
   position: absolute;
   height: 100vh !important;
   width: 100%;
