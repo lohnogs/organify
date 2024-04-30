@@ -168,6 +168,7 @@ h4 {
   min-height: calc(100vh - 100px);
   width:100%;
   margin: 0 auto;
+  paddiing:0 24px;
 }
 
 .conteudo-sn h1{
@@ -181,5 +182,5 @@ h4 {
   color:rgba(255, 255, 255, 0.711);
   max-width: 500px;
   margin:0 auto;
-  
+  text-align: justify;
 }
